@@ -1,0 +1,36 @@
+<nav class="bg-gray-900 flex justify-between h-26 border-b border-gray-700">
+    
+        <img src="https://img.freepik.com/free-vector/colorful-letter-gradient-logo-design_474888-2309.jpg?size=338&ext=jpg&ga=GA1.1.1224184972.1713657600&semt=ais" class="h-16 pl-16 pt-2 pb-2 " alt="">
+    
+       
+    <ul class="px-2 py-4 flex space-x-3 justify-end">
+        <li >
+            <button mat-raised-button  color="accent" [matMenuTriggerFor]="afterMenu">Home</button>
+            <mat-menu #afterMenu="matMenu" xPosition="after">
+              <button mat-menu-item>Item 1</button>
+              <button mat-menu-item>Item 2</button>
+            </mat-menu> 
+        </li>
+        <li >
+            <button mat-raised-button color="accent" [matMenuTriggerFor]="afterMenu">About</button>
+            <mat-menu #afterMenu="matMenu" xPosition="after">
+              <button mat-menu-item>Item 1</button>
+              <button mat-menu-item>Item 2</button>
+            </mat-menu> 
+        </li>
+        <li >
+            <button mat-raised-button color="accent" [matMenuTriggerFor]="afterMenu">Details</button>
+            <mat-menu #afterMenu="matMenu" xPosition="after">
+              <button mat-menu-item>Item 1</button>
+              <button mat-menu-item>Item 2</button>
+            </mat-menu> 
+        </li>
+        <li>
+            <button mat-raised-button color="accent" [matMenuTriggerFor]="afterMenu">Info</button>
+            <mat-menu #afterMenu="matMenu" xPosition="after">
+              <button mat-menu-item>Item 1</button>
+              <button mat-menu-item>Item 2</button>
+            </mat-menu> 
+        </li >
+    </ul>
+</nav>
